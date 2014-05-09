@@ -1,0 +1,33 @@
+# /etc/hosts: static lookup table for host names
+#
+
+#<ip-address>	<hostname.domain.org>	<hostname>
+127.0.0.1	localhost.localdomain	localhost
+::1		localhost.localdomain	localhost
+
+# https://docs.python.org/3.4/download.html
+127.0.0.1       python
+
+# https://docs.python.org/2/download.html
+127.0.0.1       python2
+
+# https://bitbucket.org/jandecaluwe/myhdl/get/default.zip
+# extract and cd into doc folder
+# make html; mv html to doc/myhdl
+127.0.0.1       myhdl
+
+# found at docs.scipy.org/doc
+# extract into a folder since it is not part of archive
+# ie mkdir scipy; mv scipy.zip scipy/; cd scipy/; unzip scipy.zip
+# must run chmod -R a+rx /numpy or /scipy 
+127.0.0.1       scipy
+127.0.0.1       numpy
+
+# http://scipy-lectures.github.io/index.html#
+127.0.0.1       scipy-notes
+
+# godoc -http=:8001 -index=true -play=true
+# placed into a systemd routine
+127.0.0.1       godoc
+
+# End of file

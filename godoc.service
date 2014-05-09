@@ -1,0 +1,13 @@
+[Unit]
+Description=Go Documentation
+Wants=network.target
+
+[Service]
+Environment=GOPATH=/home/bertabus/go
+ExecStart=/usr/bin/godoc -http=:8001 \
+-index=true -play=true -index_throttle=0.50
+RestartSec=30
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
