@@ -28,6 +28,10 @@
 
 # godoc -http=:8001 -index=true -play=true
 # placed into a systemd routine
+# 
+# create static godoc using
+# godoc -http=:8080
+# wget -r -np -N -E -p -k -e robobs=off http://localhost:8080/
 127.0.0.1       godoc
 
 # End of file
